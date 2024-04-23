@@ -27,9 +27,7 @@ class Product(models.Model):
 
     def __str__(self):
         return F'{self.name.upper()} - {self.created_at}'
-    
-    # def get_absolute_url(self):
-    #     return reverse("model_detail", kwargs={"pk": self.pk})
+
     
     
 
