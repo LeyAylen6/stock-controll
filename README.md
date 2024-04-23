@@ -13,10 +13,11 @@ This project implements a architecture `MODEL - VIEW - TEMPLATE`.
 
 📍 You can run:
 
-In stock-controll folder execute the command:
-  - `venv/Scripts/activate.bat` for activate the environment
-In src folder execute the command:
-  - `python manage.py runserver` to initialize the server.
+- In stock-controll folder execute the command:
+    - `venv/Scripts/activate.bat` for activate the environment
+    
+- In src folder execute the command:
+    - `python manage.py runserver` to initialize the server.
 
 When the project is initialized, you can view it at
 Open [http://localhost:8000/buys/](http://localhost:8000/buys/) to view it in your browser.
