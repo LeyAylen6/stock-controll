@@ -1,4 +1,4 @@
-# 🌎 Stock Controll
+# 📊 Stock Controll 📈
 Stock control is a purchasing stock organizer based on products and providers.
 
 ## 📌 About this proyect
