@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<main class="d-flex justify-content-evenly">
+    <div class="d-flex flex-column" style="width: 30%">
+        <a href={% url 'buys:products_list' %} class="mt-3">
+            <img src="{% static 'img/goBack.svg' %}" alt="go back" class="mt-3" style="width: 50px; filter: drop-shadow(5px 5px 5px green)"/>
+        </a>
+        <div class="card m-3">
+            <h5 class="card-header bg-dark text-white" style="font-weight: 400">Create new product</h5>
+            <form class="w-100 mt-2 d-flex flex-column justify-content-center" method="post">
+                {% csrf_token %}
+                <table>
+                    <tr>
+                        <td style="padding-left: 20px">Name</td>
+                        <td style="height: 100px, resize: none">{{ form.name }}</td>
+                    </tr> 
+                    <tr>
+                        <td style="padding-left: 20px">Price</td>
+                        <td >{{ form.price }}</td>
+                    </tr> 
+                    <tr>
+                        <td style="padding-left: 20px">Stock</td>
+                        <td>{{ form.actual_stock }}</td>
+                    </tr> 
+                    <tr>
+                        <td style="padding-left: 20px">Provider</td>
+                        <td>{{ form.provider }}</td>
+                    </tr> 
+                </table>
+                <div class="d-flex justify-content-center mt-4">
+                    {% if form.errors %}
+                        {% for field in form %}
+                            {% for error in field.errors %}
+                                <p class="alert alert-danger" role="alert" style="width: 90%">
+                                    {{ error }}
+                                </p>
+                            {% endfor %}
+                        {% endfor %}
+                    {% endif %}
+                </div>
+                <button type="submit" class="btn btn-success m-3">Create</button>
+            </form>
+        </div>   
+    </div>   
+    
+
+    {% comment %} <div class="card m-3">
+        <h5 class="card-header bg-dark text-white" style="font-weight: 400">Create new product</h5>
+        <form class="w-100 mt-2 d-flex flex-column justify-content-center" action="/buys/" method="post">
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="inputProductName" class="sr-only">Name</label>
+                <input type="text" class="form-control" name="product_name" id="inputProductName" placeholder="Name">
+            </div>
+            <div class="d-flex">
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputPrice" class="sr-only">Price</label>
+                    <input type="number" class="form-control" name="product_price" id="inputPrice" placeholder="Price">
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputStock" class="sr-only">Stock</label>
+                    <input type="number" class="form-control" name="product_stock" id="inputStock" placeholder="Stock">
+                </div>
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="provider" class="sr-only">Provider</label>
+                <input type="select" class="form-control" name="product_provider" id="provider" placeholder="Provider">
+            </div>
+            <button type="submit" class="btn btn-success m-3">Create</button>
+        </form>
+    </div>  {% endcomment %}
+</main> 
+{% endblock content %}

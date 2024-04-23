@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<main class="d-flex flex-column align-items-center">
+    <a href={% url 'buys:home' %}>
+        <img src="{% static 'img/goBack.svg' %}" alt="go back" class="mt-3" style="width: 50px; filter: drop-shadow(5px 5px 5px green)"/>
+    </a>
+    <h2 class="text-center mt-5">Providers</h2>
+    <table class="table mt-3" style="width: 60%">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col" class="p-3 fs-5">#</th>
+                <th scope="col" class="p-3 fs-5">Name</th>
+                <th scope="col" class="p-3 fs-5">Lastname</th>
+                <th scope="col" class="p-3 fs-5">Dni</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for provider in providers %}
+                <tr>
+                    <th scope="row" class="p-2 fs-5">{{provider.id}}</th>
+                    <td class="fs-5">{{provider.name}}</td>
+                    <td class="fs-5">{{provider.lastname}}</td>
+                    <td class="fs-5">{{provider.dni}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="new/" class="btn btn-success m-3 fs-5">Create new Provider</a>
+</main> 
+{% endblock content %}
