@@ -38,8 +38,8 @@ Open [http://localhost:8000/buys/](http://localhost:8000/buys/) to view it in yo
 ### ⚡️Products:
 - You can see all the products created in the database. If you press "Create new product", you will be redirected to the form to create a new product.
   - Views used on this section: 
-    - [Productos](/products) -> View all products 
-    - [Crear Producto](/products/new) -> Form for create a new product
+    - [Products](/products) -> View all products 
+    - [Create Product](/products/new) -> Form for create a new product
 
 <div align="center"> 
     <img align="center" src='./src/static/views/products.gif' />
