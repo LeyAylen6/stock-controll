@@ -13,7 +13,7 @@ This project implements a architecture `MODEL - VIEW - TEMPLATE`.
 
 📍 You can run:
 
-In src folder execute the command:
+In stock-controll folder execute the command:
   - `venv/Scripts/activate.bat` for activate the environment
 In src folder execute the command:
   - `python manage.py runserver` to initialize the server.
