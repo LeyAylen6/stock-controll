@@ -38,8 +38,8 @@ Open [http://localhost:8000/buys/](http://localhost:8000/buys/) to view it in yo
 ### ⚡️Products:
 - You can see all the products created in the database. If you press "Create new product", you will be redirected to the form to create a new product.
   - Views used on this section: 
-    - [Products](/products) -> View all products 
-    - [Create Product](/products/new) -> Form for create a new product
+    - [Products](http://localhost:8000/buys/products) -> View all products 
+    - [Create Product](http://localhost:8000/buys/products/new) -> Form for create a new product
 
 <div align="center"> 
     <img align="center" src='./src/static/views/products.gif' />
@@ -48,8 +48,8 @@ Open [http://localhost:8000/buys/](http://localhost:8000/buys/) to view it in yo
 ### ⚡️Products:
 - You can see all the providers created in the database. If you press "Create new provider", you will be redirected to the form to create a new provider.
   - Views used on this section: 
-    - [Providers](/providers) -> View all providers 
-    - [Create Providers](/providers/new) -> Form for create a new provider
+    - [Providers](http://localhost:8000/buys/providers) -> View all providers 
+    - [Create Providers](http://localhost:8000/buys/providers/new) -> Form for create a new provider
 
 <div align="center"> 
     <img align="center" src='./src/static/views/providers.gif' />
