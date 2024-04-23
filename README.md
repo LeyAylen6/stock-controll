@@ -23,7 +23,7 @@ Open [http://localhost:8000/buys/](http://localhost:8000/buys/) to view it in yo
 
 ## 📌 Stock Controll DER
 <div align="center"> 
-    <img align="center" src='./src/static/img/DER.jpeg'></img>
+    <img align="center" src='./src/static/img/DER.jpeg' />
 </div>
 
 ## 📌 Sections of this project
@@ -31,7 +31,7 @@ Open [http://localhost:8000/buys/](http://localhost:8000/buys/) to view it in yo
 ### ⚡️Home:
 - A little welcome to the app.
 <div align="center"> 
-    <img align="center" src='./src/static/views/home.gif' />
+    <img align="center" src='./src/static/views/home.jpeg' />
 </div>
 
 ### ⚡️Products:
