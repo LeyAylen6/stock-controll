@@ -7,7 +7,7 @@ class Provider(models.Model):
     """Class that represents the products provider."""
     name = models.TextField(max_length=30, blank=False)
     lastname = models.TextField(max_length=30, blank=False)
-    dni = models.IntegerField(validators=[MinValueValidator(0)], blank=False)
+    dni = models.IntegerField(validators=[MinValueValidator(0)], blank=False, unique=True)
     created_at = models.DateTimeField(auto_now=True)
     modified_at = models.DateTimeField(auto_now_add=True)
 
